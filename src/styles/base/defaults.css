@@ -1,0 +1,46 @@
+@import "winduum/src/base/defaults.css";
+
+:where(svg) {
+  display: block;
+
+  &:has([href]) {
+    stroke-width: 1.5;
+    stroke: currentcolor;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &:has([href$="-solid"], [href$="-mini"], [href$="-micro"]) {
+    stroke: none;
+    fill: currentcolor;
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+  }
+}
+
+:where(img) {
+  display: block;
+  font-size: 0;
+}
+
+:where(ol:not([type]), ul, menu) {
+  padding: 0;
+  margin: 0;
+}
+
+:where([type="number"]) {
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+:where([type="search"]) {
+  &::-webkit-search-cancel-button {
+    appearance: none;
+  }
+}
+

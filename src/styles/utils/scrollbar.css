@@ -1,0 +1,23 @@
+@utility no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-main) var(--color-body-primary);
+  overscroll-behavior: contain;
+
+  &::-webkit-scrollbar {
+    width: 0.375rem;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-main);
+    border-radius: var(--radius-full);
+  }
+}

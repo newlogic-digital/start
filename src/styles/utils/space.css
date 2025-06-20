@@ -1,0 +1,17 @@
+@utility space-px-* {
+  :where(& > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+
+    padding-inline: calc(--value([length], [*]) * var(--tw-space-x-reverse)) calc(--value([length], [*]) * calc(1 - var(--tw-space-x-reverse)));
+    padding-inline: calc(calc(var(--spacing) * --value(integer)) * var(--tw-space-x-reverse)) calc(calc(var(--spacing) * --value(integer)) * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@utility space-py-* {
+  :where(& > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+
+    padding-block: calc(--value([length], [*]) * var(--tw-space-y-reverse)) calc(--value([length], [*]) * calc(1 - var(--tw-space-y-reverse)));
+    padding-block: calc(calc(var(--spacing) * --value(integer)) * var(--tw-space-y-reverse)) calc(calc(var(--spacing) * --value(integer)) * calc(1 - var(--tw-space-y-reverse)));
+  }
+}
