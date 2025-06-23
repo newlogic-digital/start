@@ -44,7 +44,7 @@ VITE_API_URL=             # API URL for OpenAPI schema generation
 To mount the app as a custom HTML element, enable `customElement: true` in your `vite.config.ts`. When using this setup, use the `index.ce.html` template instead of the default `index.html`.
 
 ```
-VITE_NAME=                # Your app name, custom element in index.ce.html
+VITE_NAME=x-app           # Your app name, custom element in index.ce.html
 ```
 
 ## Usage
