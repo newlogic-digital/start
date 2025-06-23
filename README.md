@@ -12,10 +12,10 @@ A modern Vue 3 starter template with TypeScript
 - 🌍 [Vue i18n](https://vue-i18n.intlify.dev/) for internationalization
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) for styling
 - 💨 [Winduum](https://winduum.dev/) utility-first CSS framework
-- ✨ [Reka UI](https://reka-ui.netlify.app/) Vue 3 component library
+- ✨ [Reka UI](https://reka-ui.com/) Vue 3 component library
 - 🧪 [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) for code linting
 - 📊 [Sentry](https://sentry.io/) integration for error tracking
-- 🔌 [openapi-fetch](https://github.com/ajaishankar/openapi-fetch) for type-safe API calls
+- 🔌 [OpenAPI Fetch](https://openapi-ts.dev/openapi-fetch/) for type-safe API calls
 - 🔄 Auto-generated types for OpenAPI schemas
 - 🔒 HTTPS support for local development
 
