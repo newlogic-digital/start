@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
-import { useId } from 'vue'
+import { getId } from '@newlogic-digital/utils-js'
 
 interface Toast {
     id?: string
+    class?: string
     title: string
     text: string
 }
@@ -19,7 +20,7 @@ export const useToasterStore = defineStore('toaster', {
     },
     actions: {
         add(toast: Toast) {
-            const id = useId()
+            const id = getId()
 
             this.items.push({
                 id,

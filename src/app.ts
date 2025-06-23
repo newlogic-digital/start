@@ -34,4 +34,4 @@ app.use(createI18n({
   messages,
 } as I18nOptions))
 
-app.mount('#app')
+app.mount('#x-app')

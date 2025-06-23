@@ -10,15 +10,11 @@
 </script>
 
 <template>
-  <template>
-    <Icons />
-    <div class="x-app">
-      <component :is="layouts[route.meta.layout as string] || DefaultLayout">
-        <RouterView />
-      </component>
-    </div>
-    <Toaster />
-  </template>
+  <Icons />
+  <component :is="layouts[route.meta.layout as string] || DefaultLayout">
+    <RouterView />
+  </component>
+  <Toaster />
 </template>
 
 <style>

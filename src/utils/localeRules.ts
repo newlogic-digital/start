@@ -4,13 +4,8 @@ const currencyDefaults = {
 }
 
 export const currencyFormats = {
-  AUD: { ...currencyDefaults, key: 'currency', currency: 'AUD', locale: 'en-AU' },
-  CAD: { ...currencyDefaults, key: 'currency', currency: 'CAD', locale: 'en-CA' },
   CZK: { ...currencyDefaults, key: 'currency', currency: 'CZK', locale: 'cs' },
   EUR: { ...currencyDefaults, key: 'currency', currency: 'EUR', locale: 'de' },
-  GBP: { ...currencyDefaults, key: 'currency', currency: 'GBP', locale: 'en-GB' },
-  GEL: { ...currencyDefaults, key: 'currency', currency: 'GEL', locale: 'ka' },
-  USD: { ...currencyDefaults, key: 'currency', currency: 'USD', locale: 'en-US' },
 }
 
 export const datetimeFormats = {

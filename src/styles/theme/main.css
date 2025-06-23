@@ -1,3 +1,4 @@
+@import "winduum/src/utilities/skeleton/props/default.css" layer(theme);
 @import "./dark.css";
 
 @theme {

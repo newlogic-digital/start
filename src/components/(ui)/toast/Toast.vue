@@ -23,7 +23,7 @@
   <li
     :id="id"
     ref="root"
-    class="x-toast accent-error"
+    class="x-toast"
     role="status"
     aria-live="assertive"
     aria-atomic="true"
@@ -37,9 +37,9 @@
           {{ text }}
         </div>
       </div>
-      <ButtonMuted
+      <Button
         size="sm"
-        variant="circle"
+        variant="muted circle"
         class="ml-auto"
         @click="async () => {
           await closeToast(root, { remove: false })
@@ -49,7 +49,7 @@
         <svg>
           <use href="#icon-x-mark" />
         </svg>
-      </ButtonMuted>
+      </Button>
     </div>
   </li>
 </template>

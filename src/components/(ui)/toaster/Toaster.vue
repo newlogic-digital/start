@@ -30,6 +30,7 @@
       v-for="item in toaster.items"
       :id="item.id"
       :key="item.id"
+      :class="[item.class]"
       :title="item.title"
       :text="item.text"
     />

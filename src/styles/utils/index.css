@@ -1,7 +1,1 @@
-@import "winduum/src/utilities/container/props/default.css" layer(theme);
-@import "winduum/src/utilities/ripple/keyframes/default.css";
-@import "winduum/src/utilities/skeleton/props/default.css" layer(theme);
-@import "winduum/src/utilities/spinner/keyframes/ring.css";
-@import "./grid-area.css";
 @import "./scrollbar.css";
-@import "./space.css";

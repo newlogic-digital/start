@@ -46,7 +46,7 @@ export default {
     }),
     vue({
       features: {
-        customElement: true,
+        customElement: false,
       },
     }),
     vueI18n({
@@ -86,10 +86,5 @@ export default {
   build: {
     target: browserslistToEsbuild(),
     outDir: resolve(process.cwd(), 'dist'),
-    rollupOptions: {
-      output: {
-        entryFileNames: `${env.VITE_NAME}.[hash].min.js`,
-      },
-    },
   },
 }
