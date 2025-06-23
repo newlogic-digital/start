@@ -43,7 +43,7 @@
         class="ml-auto"
         @click="async () => {
           await closeToast(root, { remove: false })
-          toaster.remove(id)
+          id && toaster.remove(id)
         }"
       >
         <svg>

@@ -7,11 +7,13 @@
   const layouts = {
     DefaultLayout,
   }
+
+  type Layouts = keyof typeof layouts
 </script>
 
 <template>
   <Icons />
-  <component :is="layouts[route.meta.layout as string] || DefaultLayout">
+  <component :is="layouts[route.meta.layout as Layouts] || DefaultLayout">
     <RouterView />
   </component>
   <Toaster />
