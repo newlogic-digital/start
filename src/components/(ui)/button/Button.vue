@@ -10,6 +10,7 @@
     as?: string
     size?: sizes | `${sizes} ${string}`
     variant?: variants | `${variants} ${string}`
+    loading?: boolean
   }
 
   withDefaults(defineProps<Props>(), {
@@ -24,9 +25,14 @@
     v-if="!to"
     class="x-button"
     :class="[variant, size]"
+    :data-loading="loading"
     @click="showRipple"
   >
     <slot></slot>
+    <span
+      v-if="loading"
+      class="spinner spinner-absolute"
+    ></span>
   </component>
   <RouterLink
     v-else
@@ -39,5 +45,9 @@
     @click="showRipple"
   >
     <slot></slot>
+    <span
+      v-if="loading"
+      class="spinner spinner-absolute"
+    ></span>
   </RouterLink>
 </template>
