@@ -25,7 +25,7 @@
     v-if="!to"
     class="x-button"
     :class="[variant, size]"
-    :data-loading="loading"
+    :data-loading="loading ? true : undefined"
     @click="showRipple"
   >
     <slot></slot>
