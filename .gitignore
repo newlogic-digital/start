@@ -1,6 +1,6 @@
 .idea
 .env.local
-.env.production
+.env.*.local
 .DS_Store
 node_modules
 dist
